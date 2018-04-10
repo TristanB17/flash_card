@@ -27,4 +27,8 @@ class Round
     number_right
   end
 
+  def percent_correct
+    ((number_correct.to_f/@guesses.length.to_f) * 100).to_i
+  end
+
 end
