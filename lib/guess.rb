@@ -18,8 +18,6 @@ class Guess
     else
       "Incorrect."
     end
-    #return correct if correct? method is true,
-  # else return incorrect if method returns false
   end
 
 end

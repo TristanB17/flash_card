@@ -17,7 +17,7 @@ class GuessTest  < Minitest::Test
   end
 
   def test_it_can_view_other_cards
-    
+
   end
 
 
