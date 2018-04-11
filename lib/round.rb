@@ -31,4 +31,13 @@ class Round
     ((number_correct.to_f/@guesses.length.to_f) * 100).to_i
   end
 
+  def start
+    puts "Welcome! You're playing with #{@deck.cards.length} cards."
+    puts "-----------------------------------------------------------------"
+    puts card.question
+    reply = gets.chomp
+    guess = record_guess(reply)
+    puts guess.feedback    
+  end
+
 end
