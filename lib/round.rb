@@ -1,3 +1,5 @@
+
+
 class Round
   attr_reader   :deck,
                 :guesses
@@ -34,10 +36,12 @@ class Round
   def start
     puts "Welcome! You're playing with #{@deck.cards.length} cards."
     puts "-----------------------------------------------------------------"
-    puts card.question
-    reply = gets.chomp
-    guess = record_guess(reply)
-    puts guess.feedback    
+    @deck.cards.each_with_index do |card, index|
+      puts card.question
+      reply = gets.chomp
+      guess = record_guess(reply)
+      puts guess.feedback
+    end
   end
 
 end
